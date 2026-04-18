@@ -1,0 +1,641 @@
+[
+  {
+    "metrica": "Receita Líquida",
+    "categoria": "resultado",
+    "nivel": "iniciante",
+    "formula": "receita_bruta - devolucoes - abatimentos - impostos_sobre_vendas",
+    "explicacao_simples": "É o valor que realmente sobra das vendas depois dos descontos e tributos diretamente ligados à venda.",
+    "componentes_formula": {
+      "receita_bruta": "Total vendido antes de descontos e impostos",
+      "devolucoes": "Valores devolvidos por clientes",
+      "abatimentos": "Descontos concedidos após a venda",
+      "impostos_sobre_vendas": "Tributos incidentes sobre faturamento"
+    },
+    "interpretacao": "Ajuda a medir o faturamento efetivo do negócio. É uma base importante para calcular margens.",
+    "quando_usar": "Quando quiser comparar desempenho comercial entre períodos ou calcular indicadores de rentabilidade.",
+    "erro_comum": "Confundir receita líquida com entrada de caixa. Uma venda a prazo pode aumentar a receita sem aumentar o caixa no mesmo dia.",
+    "exemplo": {
+      "valores": {
+        "receita_bruta": 100000,
+        "devolucoes": 2000,
+        "abatimentos": 1000,
+        "impostos_sobre_vendas": 7000
+      },
+      "calculo": "100000 - 2000 - 1000 - 7000 = 90000",
+      "resultado": "Receita líquida = 90000"
+    },
+    "palavras_chave": [
+      "faturamento",
+      "receita",
+      "vendas líquidas"
+    ]
+  },
+  {
+    "metrica": "Lucro Bruto",
+    "categoria": "rentabilidade",
+    "nivel": "iniciante",
+    "formula": "receita_liquida - custo_dos_produtos_ou_servicos",
+    "explicacao_simples": "Mostra quanto sobra da receita depois de pagar os custos diretos do que foi vendido.",
+    "componentes_formula": {
+      "receita_liquida": "Faturamento efetivo após descontos e impostos",
+      "custo_dos_produtos_ou_servicos": "Custos diretamente ligados à produção ou entrega"
+    },
+    "interpretacao": "Quanto maior o lucro bruto, maior a folga para pagar despesas operacionais e ainda gerar lucro final.",
+    "quando_usar": "Para analisar eficiência da operação principal e comparar produtos, serviços ou meses.",
+    "erro_comum": "Misturar despesas administrativas ou de marketing com custo direto.",
+    "exemplo": {
+      "valores": {
+        "receita_liquida": 90000,
+        "custo_dos_produtos_ou_servicos": 54000
+      },
+      "calculo": "90000 - 54000 = 36000",
+      "resultado": "Lucro bruto = 36000"
+    },
+    "palavras_chave": [
+      "lucro bruto",
+      "cpv",
+      "cmv",
+      "custos diretos"
+    ]
+  },
+  {
+    "metrica": "Lucro Líquido",
+    "categoria": "rentabilidade",
+    "nivel": "iniciante",
+    "formula": "receita_liquida - custos - despesas - juros - impostos",
+    "explicacao_simples": "É o resultado final depois de descontar todos os gastos do período.",
+    "componentes_formula": {
+      "custos": "Gastos diretamente ligados à operação principal",
+      "despesas": "Gastos administrativos, comerciais e gerais",
+      "juros": "Encargos financeiros",
+      "impostos": "Tributos sobre o resultado ou outras incidências"
+    },
+    "interpretacao": "Mostra se a empresa realmente teve ganho no fim do período.",
+    "quando_usar": "Para avaliar resultado final, sustentabilidade do negócio e desempenho consolidado.",
+    "erro_comum": "Achar que lucro líquido é o mesmo que saldo em conta bancária.",
+    "exemplo": {
+      "valores": {
+        "receita_liquida": 90000,
+        "custos": 54000,
+        "despesas": 22000,
+        "juros": 1000,
+        "impostos": 3000
+      },
+      "calculo": "90000 - 54000 - 22000 - 1000 - 3000 = 10000",
+      "resultado": "Lucro líquido = 10000"
+    },
+    "palavras_chave": [
+      "resultado final",
+      "lucro",
+      "rentabilidade"
+    ]
+  },
+  {
+    "metrica": "Margem Bruta",
+    "categoria": "margens",
+    "nivel": "iniciante",
+    "formula": "(lucro_bruto / receita_liquida) * 100",
+    "explicacao_simples": "É a porcentagem da receita que sobra após os custos diretos.",
+    "componentes_formula": {
+      "lucro_bruto": "Receita líquida menos custos diretos",
+      "receita_liquida": "Faturamento efetivo"
+    },
+    "interpretacao": "Margem bruta maior indica maior eficiência na entrega do produto ou serviço.",
+    "quando_usar": "Para comparar rentabilidade operacional entre períodos, empresas ou produtos.",
+    "erro_comum": "Dividir pelo custo em vez de dividir pela receita líquida.",
+    "exemplo": {
+      "valores": {
+        "lucro_bruto": 36000,
+        "receita_liquida": 90000
+      },
+      "calculo": "(36000 / 90000) * 100 = 40%",
+      "resultado": "Margem bruta = 40%"
+    },
+    "palavras_chave": [
+      "margem",
+      "margem bruta",
+      "rentabilidade"
+    ]
+  },
+  {
+    "metrica": "Margem Líquida",
+    "categoria": "margens",
+    "nivel": "iniciante",
+    "formula": "(lucro_liquido / receita_liquida) * 100",
+    "explicacao_simples": "Mostra qual porcentagem da receita virou lucro no final do período.",
+    "componentes_formula": {
+      "lucro_liquido": "Resultado final após todos os gastos",
+      "receita_liquida": "Faturamento efetivo"
+    },
+    "interpretacao": "É uma visão completa da eficiência financeira do negócio.",
+    "quando_usar": "Para avaliar resultado final e comparar desempenho global entre períodos.",
+    "erro_comum": "Usar lucro bruto no lugar de lucro líquido.",
+    "exemplo": {
+      "valores": {
+        "lucro_liquido": 10000,
+        "receita_liquida": 90000
+      },
+      "calculo": "(10000 / 90000) * 100 = 11.11%",
+      "resultado": "Margem líquida = 11.11%"
+    },
+    "palavras_chave": [
+      "margem líquida",
+      "lucro líquido",
+      "resultado percentual"
+    ]
+  },
+  {
+    "metrica": "EBITDA",
+    "categoria": "resultado",
+    "nivel": "intermediario",
+    "formula": "lucro_operacional + depreciacao + amortizacao",
+    "explicacao_simples": "Mostra a geração operacional antes de efeitos contábeis e financeiros específicos.",
+    "componentes_formula": {
+      "lucro_operacional": "Resultado da operação antes do financeiro",
+      "depreciacao": "Perda de valor de bens físicos ao longo do tempo",
+      "amortizacao": "Reconhecimento contábil de ativos intangíveis"
+    },
+    "interpretacao": "Ajuda a enxergar a capacidade operacional de geração de resultado.",
+    "quando_usar": "Para comparar desempenho operacional entre empresas ou analisar eficiência sem foco no efeito financeiro.",
+    "erro_comum": "Tratar EBITDA como caixa disponível. Ele é um indicador operacional, não o saldo de caixa.",
+    "exemplo": {
+      "valores": {
+        "lucro_operacional": 18000,
+        "depreciacao": 2000,
+        "amortizacao": 1000
+      },
+      "calculo": "18000 + 2000 + 1000 = 21000",
+      "resultado": "EBITDA = 21000"
+    },
+    "palavras_chave": [
+      "ebitda",
+      "resultado operacional",
+      "geração operacional"
+    ]
+  },
+  {
+    "metrica": "Margem EBITDA",
+    "categoria": "margens",
+    "nivel": "intermediario",
+    "formula": "(ebitda / receita_liquida) * 100",
+    "explicacao_simples": "É a porcentagem da receita que se transforma em EBITDA.",
+    "componentes_formula": {
+      "ebitda": "Resultado operacional ajustado",
+      "receita_liquida": "Faturamento efetivo"
+    },
+    "interpretacao": "Quanto maior, mais eficiente tende a ser a operação antes de efeitos financeiros e contábeis.",
+    "quando_usar": "Para comparar eficiência operacional entre empresas ou meses.",
+    "erro_comum": "Comparar margens EBITDA de negócios muito diferentes sem contexto setorial.",
+    "exemplo": {
+      "valores": {
+        "ebitda": 21000,
+        "receita_liquida": 90000
+      },
+      "calculo": "(21000 / 90000) * 100 = 23.33%",
+      "resultado": "Margem EBITDA = 23.33%"
+    },
+    "palavras_chave": [
+      "margem ebitda",
+      "eficiência operacional",
+      "rentabilidade operacional"
+    ]
+  },
+  {
+    "metrica": "Ticket Médio",
+    "categoria": "vendas",
+    "nivel": "iniciante",
+    "formula": "faturamento_total / numero_de_vendas",
+    "explicacao_simples": "Mostra o valor médio por venda realizada.",
+    "componentes_formula": {
+      "faturamento_total": "Valor total vendido no período",
+      "numero_de_vendas": "Quantidade de pedidos, transações ou vendas"
+    },
+    "interpretacao": "Ajuda a entender se a empresa está vendendo mais valor por operação.",
+    "quando_usar": "Para analisar desempenho comercial e acompanhar mudanças em mix de produtos.",
+    "erro_comum": "Dividir pelo número de clientes quando o correto é número de vendas, dependendo do objetivo.",
+    "exemplo": {
+      "valores": {
+        "faturamento_total": 50000,
+        "numero_de_vendas": 1000
+      },
+      "calculo": "50000 / 1000 = 50",
+      "resultado": "Ticket médio = 50"
+    },
+    "palavras_chave": [
+      "ticket médio",
+      "valor médio por venda",
+      "vendas"
+    ]
+  },
+  {
+    "metrica": "Crescimento de Receita",
+    "categoria": "crescimento",
+    "nivel": "iniciante",
+    "formula": "((receita_periodo_atual - receita_periodo_anterior) / receita_periodo_anterior) * 100",
+    "explicacao_simples": "Mede quanto a receita cresceu ou caiu em relação ao período anterior.",
+    "componentes_formula": {
+      "receita_periodo_atual": "Receita do mês, trimestre ou ano atual",
+      "receita_periodo_anterior": "Receita do período de comparação"
+    },
+    "interpretacao": "Valor positivo indica crescimento. Valor negativo indica queda.",
+    "quando_usar": "Para comparar meses, trimestres ou anos e avaliar tendência de faturamento.",
+    "erro_comum": "Comparar períodos com sazonalidade muito diferente sem explicar o contexto.",
+    "exemplo": {
+      "valores": {
+        "receita_periodo_atual": 120000,
+        "receita_periodo_anterior": 100000
+      },
+      "calculo": "((120000 - 100000) / 100000) * 100 = 20%",
+      "resultado": "Crescimento de receita = 20%"
+    },
+    "palavras_chave": [
+      "crescimento",
+      "variação percentual",
+      "faturamento"
+    ]
+  },
+  {
+    "metrica": "Crescimento do Lucro Líquido",
+    "categoria": "crescimento",
+    "nivel": "iniciante",
+    "formula": "((lucro_atual - lucro_anterior) / lucro_anterior) * 100",
+    "explicacao_simples": "Mede quanto o lucro final aumentou ou diminuiu em comparação com o período anterior.",
+    "componentes_formula": {
+      "lucro_atual": "Lucro líquido do período atual",
+      "lucro_anterior": "Lucro líquido do período de comparação"
+    },
+    "interpretacao": "Ajuda a ver se a empresa está melhorando resultados, não apenas vendendo mais.",
+    "quando_usar": "Para comparar evolução da rentabilidade entre períodos.",
+    "erro_comum": "Aplicar a fórmula quando o lucro anterior é zero ou negativo sem explicar a limitação.",
+    "exemplo": {
+      "valores": {
+        "lucro_atual": 15000,
+        "lucro_anterior": 10000
+      },
+      "calculo": "((15000 - 10000) / 10000) * 100 = 50%",
+      "resultado": "Crescimento do lucro líquido = 50%"
+    },
+    "palavras_chave": [
+      "crescimento do lucro",
+      "evolução do lucro",
+      "variação percentual"
+    ]
+  },
+  {
+    "metrica": "Ponto de Equilíbrio",
+    "categoria": "planejamento",
+    "nivel": "intermediario",
+    "formula": "custos_e_despesas_fixos / margem_de_contribuicao_percentual",
+    "explicacao_simples": "Mostra quanto é preciso faturar para cobrir todos os custos e despesas sem dar lucro nem prejuízo.",
+    "componentes_formula": {
+      "custos_e_despesas_fixos": "Gastos que não variam no curto prazo",
+      "margem_de_contribuicao_percentual": "Percentual da receita que sobra após custos e despesas variáveis"
+    },
+    "interpretacao": "Acima do ponto de equilíbrio, a operação tende a gerar lucro. Abaixo, tende a gerar prejuízo.",
+    "quando_usar": "Para metas de vendas, precificação e planejamento financeiro.",
+    "erro_comum": "Usar margem bruta no lugar da margem de contribuição.",
+    "exemplo": {
+      "valores": {
+        "custos_e_despesas_fixos": 30000,
+        "margem_de_contribuicao_percentual": 0.4
+      },
+      "calculo": "30000 / 0.4 = 75000",
+      "resultado": "Ponto de equilíbrio = 75000 em receita"
+    },
+    "palavras_chave": [
+      "break-even",
+      "ponto de equilíbrio",
+      "meta mínima"
+    ]
+  },
+  {
+    "metrica": "Margem de Contribuição",
+    "categoria": "planejamento",
+    "nivel": "intermediario",
+    "formula": "((receita_liquida - custos_e_despesas_variaveis) / receita_liquida) * 100",
+    "explicacao_simples": "Mostra quanto da receita sobra para pagar custos fixos e gerar lucro.",
+    "componentes_formula": {
+      "receita_liquida": "Faturamento efetivo",
+      "custos_e_despesas_variaveis": "Gastos que variam conforme o volume vendido"
+    },
+    "interpretacao": "É fundamental para saber o quanto cada venda ajuda a sustentar o negócio.",
+    "quando_usar": "Para análise de produtos, metas e cálculo do ponto de equilíbrio.",
+    "erro_comum": "Confundir margem de contribuição com margem líquida.",
+    "exemplo": {
+      "valores": {
+        "receita_liquida": 90000,
+        "custos_e_despesas_variaveis": 54000
+      },
+      "calculo": "((90000 - 54000) / 90000) * 100 = 40%",
+      "resultado": "Margem de contribuição = 40%"
+    },
+    "palavras_chave": [
+      "margem de contribuição",
+      "contribuição",
+      "break-even"
+    ]
+  },
+  {
+    "metrica": "Markup",
+    "categoria": "precificacao",
+    "nivel": "intermediario",
+    "formula": "preco_de_venda / custo",
+    "explicacao_simples": "Mostra quantas vezes o preço de venda representa o custo do produto ou serviço.",
+    "componentes_formula": {
+      "preco_de_venda": "Valor cobrado do cliente",
+      "custo": "Custo unitário do item"
+    },
+    "interpretacao": "Ajuda na formação de preço, mas sozinho não garante rentabilidade se as despesas forem ignoradas.",
+    "quando_usar": "Na precificação inicial de produtos e serviços.",
+    "erro_comum": "Usar markup como sinônimo de margem. São conceitos diferentes.",
+    "exemplo": {
+      "valores": {
+        "preco_de_venda": 150,
+        "custo": 100
+      },
+      "calculo": "150 / 100 = 1.5",
+      "resultado": "Markup = 1.5"
+    },
+    "palavras_chave": [
+      "markup",
+      "precificação",
+      "preço"
+    ]
+  },
+  {
+    "metrica": "ROI",
+    "categoria": "retorno",
+    "nivel": "iniciante",
+    "formula": "((ganho_obtido - valor_investido) / valor_investido) * 100",
+    "explicacao_simples": "Mede o retorno percentual de um investimento ou projeto.",
+    "componentes_formula": {
+      "ganho_obtido": "Benefício financeiro gerado",
+      "valor_investido": "Valor aplicado no projeto, ação ou iniciativa"
+    },
+    "interpretacao": "ROI positivo indica retorno acima do valor investido. ROI negativo indica perda.",
+    "quando_usar": "Para avaliar projetos, campanhas, treinamentos ou compras que gerem resultado financeiro.",
+    "erro_comum": "Confundir faturamento gerado com ganho real sem descontar custos.",
+    "exemplo": {
+      "valores": {
+        "ganho_obtido": 18000,
+        "valor_investido": 12000
+      },
+      "calculo": "((18000 - 12000) / 12000) * 100 = 50%",
+      "resultado": "ROI = 50%"
+    },
+    "palavras_chave": [
+      "roi",
+      "retorno sobre investimento",
+      "projetos"
+    ]
+  },
+  {
+    "metrica": "Liquidez Corrente",
+    "categoria": "liquidez",
+    "nivel": "intermediario",
+    "formula": "ativo_circulante / passivo_circulante",
+    "explicacao_simples": "Mostra a capacidade de pagar obrigações de curto prazo com recursos de curto prazo.",
+    "componentes_formula": {
+      "ativo_circulante": "Caixa, estoques, contas a receber e outros ativos de curto prazo",
+      "passivo_circulante": "Dívidas e obrigações exigíveis no curto prazo"
+    },
+    "interpretacao": "Acima de 1 indica, em geral, cobertura das dívidas de curto prazo. Ainda assim, depende da qualidade dos ativos.",
+    "quando_usar": "Para analisar saúde financeira e solvência de curto prazo.",
+    "erro_comum": "Considerar qualquer valor acima de 1 como ótimo sem avaliar se estoque e recebíveis são realizáveis.",
+    "exemplo": {
+      "valores": {
+        "ativo_circulante": 80000,
+        "passivo_circulante": 50000
+      },
+      "calculo": "80000 / 50000 = 1.6",
+      "resultado": "Liquidez corrente = 1.6"
+    },
+    "palavras_chave": [
+      "liquidez corrente",
+      "curto prazo",
+      "solvência"
+    ]
+  },
+  {
+    "metrica": "Endividamento Geral",
+    "categoria": "estrutura_de_capital",
+    "nivel": "intermediario",
+    "formula": "(passivo_total / ativo_total) * 100",
+    "explicacao_simples": "Indica quanto dos ativos da empresa é financiado por dívidas.",
+    "componentes_formula": {
+      "passivo_total": "Total das obrigações",
+      "ativo_total": "Total de bens e direitos"
+    },
+    "interpretacao": "Percentual maior indica maior dependência de capital de terceiros.",
+    "quando_usar": "Para analisar risco financeiro e estrutura de capital.",
+    "erro_comum": "Julgar a empresa só por esse indicador, sem comparar com setor e custo da dívida.",
+    "exemplo": {
+      "valores": {
+        "passivo_total": 180000,
+        "ativo_total": 300000
+      },
+      "calculo": "(180000 / 300000) * 100 = 60%",
+      "resultado": "Endividamento geral = 60%"
+    },
+    "palavras_chave": [
+      "endividamento",
+      "capital de terceiros",
+      "risco financeiro"
+    ]
+  },
+  {
+    "metrica": "Giro do Ativo",
+    "categoria": "eficiencia",
+    "nivel": "intermediario",
+    "formula": "receita_liquida / ativo_total_medio",
+    "explicacao_simples": "Mostra quanto de receita a empresa gera para cada unidade monetária investida em ativos.",
+    "componentes_formula": {
+      "receita_liquida": "Faturamento efetivo",
+      "ativo_total_medio": "Média dos ativos totais no período"
+    },
+    "interpretacao": "Quanto maior, maior a eficiência no uso dos ativos para gerar receita.",
+    "quando_usar": "Para análise operacional e comparação de eficiência entre empresas do mesmo setor.",
+    "erro_comum": "Comparar empresas de setores muito diferentes.",
+    "exemplo": {
+      "valores": {
+        "receita_liquida": 240000,
+        "ativo_total_medio": 120000
+      },
+      "calculo": "240000 / 120000 = 2",
+      "resultado": "Giro do ativo = 2"
+    },
+    "palavras_chave": [
+      "giro do ativo",
+      "eficiência dos ativos",
+      "produtividade"
+    ]
+  },
+  {
+    "metrica": "Giro de Estoque",
+    "categoria": "eficiencia",
+    "nivel": "intermediario",
+    "formula": "custo_das_mercadorias_vendidas / estoque_medio",
+    "explicacao_simples": "Mostra quantas vezes o estoque foi renovado no período.",
+    "componentes_formula": {
+      "custo_das_mercadorias_vendidas": "Custo das vendas realizadas",
+      "estoque_medio": "Média do estoque no período"
+    },
+    "interpretacao": "Giro alto pode indicar boa rotação. Giro baixo pode indicar estoque parado.",
+    "quando_usar": "Para analisar operação comercial, compras e eficiência de estoque.",
+    "erro_comum": "Interpretar giro alto como sempre positivo, sem considerar risco de ruptura.",
+    "exemplo": {
+      "valores": {
+        "custo_das_mercadorias_vendidas": 120000,
+        "estoque_medio": 30000
+      },
+      "calculo": "120000 / 30000 = 4",
+      "resultado": "Giro de estoque = 4 vezes no período"
+    },
+    "palavras_chave": [
+      "estoque",
+      "giro",
+      "rotação"
+    ]
+  },
+  {
+    "metrica": "Prazo Médio de Recebimento",
+    "categoria": "ciclo_financeiro",
+    "nivel": "intermediario",
+    "formula": "(contas_a_receber / receita_liquida) * numero_de_dias_do_periodo",
+    "explicacao_simples": "Mostra, em média, em quantos dias a empresa recebe de seus clientes.",
+    "componentes_formula": {
+      "contas_a_receber": "Valores a receber de clientes",
+      "receita_liquida": "Receita do período",
+      "numero_de_dias_do_periodo": "Exemplo: 30, 90 ou 365 dias"
+    },
+    "interpretacao": "Prazo maior significa mais tempo para transformar venda em caixa.",
+    "quando_usar": "Para análise de crédito, capital de giro e política comercial.",
+    "erro_comum": "Usar receita bruta em vez de receita líquida sem padronização.",
+    "exemplo": {
+      "valores": {
+        "contas_a_receber": 45000,
+        "receita_liquida": 90000,
+        "numero_de_dias_do_periodo": 30
+      },
+      "calculo": "(45000 / 90000) * 30 = 15 dias",
+      "resultado": "Prazo médio de recebimento = 15 dias"
+    },
+    "palavras_chave": [
+      "pmr",
+      "recebimento",
+      "prazo médio"
+    ]
+  },
+  {
+    "metrica": "Prazo Médio de Pagamento",
+    "categoria": "ciclo_financeiro",
+    "nivel": "intermediario",
+    "formula": "(fornecedores / compras_ou_custos) * numero_de_dias_do_periodo",
+    "explicacao_simples": "Mostra, em média, em quantos dias a empresa paga seus fornecedores.",
+    "componentes_formula": {
+      "fornecedores": "Saldo a pagar a fornecedores",
+      "compras_ou_custos": "Compras ou custos do período",
+      "numero_de_dias_do_periodo": "Exemplo: 30, 90 ou 365 dias"
+    },
+    "interpretacao": "Prazo maior pode aliviar o caixa, desde que não prejudique relacionamento ou custo.",
+    "quando_usar": "Para avaliar capital de giro e gestão de pagamentos.",
+    "erro_comum": "Usar contas totais a pagar em vez de apenas fornecedores, se a intenção for medir esse indicador específico.",
+    "exemplo": {
+      "valores": {
+        "fornecedores": 30000,
+        "compras_ou_custos": 60000,
+        "numero_de_dias_do_periodo": 30
+      },
+      "calculo": "(30000 / 60000) * 30 = 15 dias",
+      "resultado": "Prazo médio de pagamento = 15 dias"
+    },
+    "palavras_chave": [
+      "pmp",
+      "pagamento",
+      "fornecedores"
+    ]
+  },
+  {
+    "metrica": "Ciclo Financeiro",
+    "categoria": "ciclo_financeiro",
+    "nivel": "intermediario",
+    "formula": "prazo_medio_de_estoque + prazo_medio_de_recebimento - prazo_medio_de_pagamento",
+    "explicacao_simples": "Mostra quantos dias o dinheiro fica preso na operação até voltar para o caixa.",
+    "componentes_formula": {
+      "prazo_medio_de_estoque": "Tempo médio de permanência do estoque",
+      "prazo_medio_de_recebimento": "Tempo médio para receber vendas",
+      "prazo_medio_de_pagamento": "Tempo médio para pagar fornecedores"
+    },
+    "interpretacao": "Quanto menor, melhor tende a ser a necessidade de capital de giro.",
+    "quando_usar": "Para estudar caixa operacional e eficiência financeira da operação.",
+    "erro_comum": "Confundir ciclo operacional com ciclo financeiro.",
+    "exemplo": {
+      "valores": {
+        "prazo_medio_de_estoque": 20,
+        "prazo_medio_de_recebimento": 15,
+        "prazo_medio_de_pagamento": 18
+      },
+      "calculo": "20 + 15 - 18 = 17 dias",
+      "resultado": "Ciclo financeiro = 17 dias"
+    },
+    "palavras_chave": [
+      "ciclo financeiro",
+      "capital de giro",
+      "caixa operacional"
+    ]
+  },
+  {
+    "metrica": "Fluxo de Caixa Operacional",
+    "categoria": "caixa",
+    "nivel": "iniciante",
+    "formula": "entradas_operacionais - saidas_operacionais",
+    "explicacao_simples": "Mostra o saldo de caixa gerado pelas operações principais do negócio.",
+    "componentes_formula": {
+      "entradas_operacionais": "Recebimentos ligados à atividade principal",
+      "saidas_operacionais": "Pagamentos ligados à operação"
+    },
+    "interpretacao": "Ajuda a entender se a operação está gerando caixa de verdade.",
+    "quando_usar": "Para analisar sustentabilidade financeira e diferença entre lucro e caixa.",
+    "erro_comum": "Misturar entradas financeiras ou de empréstimos com operação principal.",
+    "exemplo": {
+      "valores": {
+        "entradas_operacionais": 70000,
+        "saidas_operacionais": 58000
+      },
+      "calculo": "70000 - 58000 = 12000",
+      "resultado": "Fluxo de caixa operacional = 12000"
+    },
+    "palavras_chave": [
+      "fluxo de caixa",
+      "caixa operacional",
+      "geração de caixa"
+    ]
+  },
+  {
+    "metrica": "Inadimplência",
+    "categoria": "risco",
+    "nivel": "iniciante",
+    "formula": "(valor_em_atraso / contas_a_receber_total) * 100",
+    "explicacao_simples": "Mostra qual porcentagem do valor a receber está em atraso.",
+    "componentes_formula": {
+      "valor_em_atraso": "Valores vencidos e não pagos pelos clientes",
+      "contas_a_receber_total": "Total de valores a receber"
+    },
+    "interpretacao": "Percentual maior indica maior risco de perda e mais pressão sobre o caixa.",
+    "quando_usar": "Para acompanhar cobrança, crédito e risco financeiro.",
+    "erro_comum": "Analisar inadimplência sem segmentar clientes ou faixas de atraso.",
+    "exemplo": {
+      "valores": {
+        "valor_em_atraso": 8000,
+        "contas_a_receber_total": 50000
+      },
+      "calculo": "(8000 / 50000) * 100 = 16%",
+      "resultado": "Inadimplência = 16%"
+    },
+    "palavras_chave": [
+      "inadimplência",
+      "atraso",
+      "contas a receber"
+    ]
+  }
+]
