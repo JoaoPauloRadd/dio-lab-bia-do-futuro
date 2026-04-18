@@ -43,7 +43,7 @@ Com isso, a base de conhecimento passou a servir melhor a um cenário de ensino 
 
 ### Como os dados são carregados?
 
-Os arquivos da base de conhecimento são carregados localmente pela aplicação no início da execução.  
+Os arquivos da base de conhecimento são carregados localmente pela aplicação no início da execução, ou injetados diretamente no prompt.  
 Os arquivos CSV são lidos com `pandas` e os arquivos JSON são carregados com a biblioteca `json`, permitindo que o agente utilize dados estruturados sobre histórico de dúvidas, perfil do aluno, métricas financeiras e exemplos práticos de movimentações financeiras.
 
 ```python
