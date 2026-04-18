@@ -1,6 +1,5 @@
 data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+2025-09-15,chat,Receita x lucro,"Cliente pediu uma explicação simples sobre a diferença entre receita, lucro bruto e lucro líquido",sim
+2025-09-19,chat,Margem de lucro,Cliente quis entender como calcular margem bruta e margem líquida em uma planilha básica,sim
+2025-09-24,email,Fluxo de caixa,Cliente perguntou como organizar entradas e saídas mensais para não confundir caixa com lucro,sim
+2025-09-28,telefone,Percentual de crescimento,Cliente teve dúvida para calcular crescimento mensal de faturamento entre dois períodos,sim
