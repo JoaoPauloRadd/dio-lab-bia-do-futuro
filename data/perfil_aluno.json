@@ -1,0 +1,18 @@
+{
+  "nome": "João Paulo",
+  "nivel": "iniciante",
+  "objetivos_aprendizado": [
+    "entender receita, custo e lucro",
+    "aprender margem bruta e líquida",
+    "calcular crescimento percentual",
+    "interpretar fluxo de caixa"
+  ],
+  "dificuldades": [
+    "porcentagem",
+    "diferença entre caixa e lucro",
+    "interpretação de indicadores"
+  ],
+  "formato_preferido": "explicações curtas com exemplos",
+  "ultimo_tema_estudado": "margem de lucro",
+  "contexto": "transição para análise de dados financeiros"
+}
