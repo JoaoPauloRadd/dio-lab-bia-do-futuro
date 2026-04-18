@@ -42,18 +42,24 @@ Com isso, a base de conhecimento passou a servir melhor a um cenário de ensino 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
 
-Os arquivos JSON e CSV da pasta `data` são carregados pela aplicação no início da sessão ou quando necessário para montar o contexto do agente.
+Os arquivos da base de conhecimento são carregados localmente pela aplicação no início da execução.  
+Os arquivos CSV são lidos com `pandas` e os arquivos JSON são carregados com a biblioteca `json`, permitindo que o agente utilize dados estruturados sobre histórico de dúvidas, perfil do aluno, métricas financeiras e exemplos práticos de movimentações financeiras.
 
-Cada arquivo cumpre um papel específico:
+```python
+import pandas as pd
+import json
 
-- `perfil_aluno.json` fornece o contexto individual do usuário;
-- `metricas_financeiras.json` fornece o conteúdo conceitual e técnico;
-- `historico_atendimento.csv` oferece memória de dúvidas e exemplos anteriores;
-- `transacoes.csv` fornece dados estruturados para cálculos e exercícios.
+# CSVs
+historico = pd.read_csv('data/historico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
 
-Após o carregamento, os dados são convertidos para estruturas que possam ser facilmente resumidas e injetadas no contexto do modelo, evitando excesso de texto e priorizando apenas as informações úteis para a pergunta atual.
+# JSONs
+with open('data/perfil_aluno.json', 'r', encoding='utf-8') as f:
+    perfil_aluno = json.load(f)
+
+with open('data/metricas_financeiras.json', 'r', encoding='utf-8') as f:
+    metricas_financeiras = json.load(f)
 
 ### Como os dados são usados no prompt?
 
