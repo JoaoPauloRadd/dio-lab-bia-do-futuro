@@ -1,11 +1,6 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+data,descricao,categoria,valor,tipo,competencia
+2025-01-05,Recebimento de vendas,receita,8000,entrada,2025-01
+2025-01-08,Pagamento de fornecedores,custos,3200,saida,2025-01
+2025-01-10,Aluguel do escritório,despesas,1200,saida,2025-01
+2025-01-15,Salários,despesas,2500,saida,2025-01
+2025-01-20,Recebimento de clientes,receita,4500,entrada,2025-01
