@@ -100,6 +100,6 @@ Adicione aqui um print da aplicação em funcionamento no navegador ou no termin
 
 Exemplo:
 
-```md
+
 ![Evidência de execução](./evidencia-execucao.png)
-```
+
