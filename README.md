@@ -46,9 +46,6 @@ flowchart TD
 
 ---
 
-## Estrutura do Projeto
-
-```bash
 .
 ├── README.md
 ├── assets/
@@ -64,9 +61,13 @@ flowchart TD
 │   ├── 04-metricas.md
 │   └── 05-pitch.md
 ├── examples/
+│   ├── README.md
+│   ├── precisao.jpeg
+│   ├── coerência.jpeg
+│   ├── escopo.jpeg
+│   └── seguranca.jpeg
 └── src/
     └── app.py
-```
 
 > **Nota importante:** o `app.py` atual referencia `perfil_aluno.json` e `metricas_financeiras.json`. Se a sua pasta `data/` ainda estiver com nomes antigos como `perfil_investidor.json` e `produtos_financeiros.json`, vale alinhar os nomes dos arquivos antes de executar a aplicação.
 
